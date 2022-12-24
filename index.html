@@ -4,9 +4,112 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>KUKDALA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datatables.net-bs5/1.13.1/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    
+   <!-- NAVBAR -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <!-- =========OFFCANVAS TRIGGER -->
+        <button class="navbar-toggler me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <span class="navbar-toggler-icon" data-bs-target="#navbarSupportedContent"></span>
+          </button>
+          
+        <!-- =========OFFCANVAS TRIGGER -->
+      <a class="navbar-brand fw-bold text-uppercase me-auto" href="#">Ko'kdala</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        
+        <form class="d-flex ms-auto my-lg-8" role="search" >
+            <div class="input-group my-3">
+                <input type="text" class="form-control " placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-primary" type="button" id="button-addon2">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+        </form>
+        <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+        </ul>
+      </div>
+      
+    </div>
+  </nav>
+   <!-- NAVBAR -->
+   
+   <!--========== OFFCANVAS =============-->
+ 
+  <div class=" sidebar-nav offcanvas offcanvas-start bg-dark text-white" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+   
+    <div class="offcanvas-body p-0 ">
+      <nav class="navbar-dark">
+        <ul class="navbar-nav mt-5 ml-5">
+            <li class="navbar__item">
+                <a href="#">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li class="navbar__item">
+                <a href="#">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <span>Chart</span>
+                </a>
+            </li>
+            <li class="navbar__item">
+                <a href="#">
+                    <i class="fa-solid fa-message"></i>
+                    <span>Form</span>
+                </a>
+            </li>
+            <li class="navbar__item">
+                <a href="#">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+            </li>
+            <li class="navbar__item">
+                <a href="#">
+                    <i class="fa-solid fa-gears"></i>
+                    <span>Seting</span>
+                </a>
+            </li>
+            <li class="navbar__item text-center">
+                <a href="#">
+                   SIGN OUT
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+   <!--========== OFFCANVAS =============-->
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables.net/2.1.1/jquery.dataTables.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables.net-bs5/1.13.1/dataTables.bootstrap5.min.js"></script>
 </body>
 </html>
